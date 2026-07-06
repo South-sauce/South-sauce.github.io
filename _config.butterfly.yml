@@ -59,7 +59,7 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/1.jpg
   effect: false
 
 # Disable all banner images
@@ -1061,9 +1061,9 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - '<style>.aplayer.aplayer-fixed{left:0!important;right:auto!important;}.aplayer.aplayer-fixed .aplayer-body{left:0!important;right:auto!important;}.aplayer.aplayer-fixed .aplayer-list{left:0!important;right:auto!important;}meting-js .aplayer.aplayer-fixed{left:0!important;right:auto!important;}</style>'
   bottom:
-    - '<div class="aplayer" data-id="387465322" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="list" data-volume="0.5" data-preload="auto"></div>'
+    - '<meting-js server="netease" type="playlist" id="387465322" fixed="true" autoplay="false" order="list" volume="0.5" preload="auto" list-folded="true" lrc-type="1"></meting-js>'
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1073,7 +1073,7 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: jsdelivr
+  third_party_provider: local
 
   # Add version number to url, true or false
   version: true
